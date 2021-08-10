@@ -1,4 +1,4 @@
-import { ChartBarIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { motion } from "framer-motion";
 
 export default function Banner() {
   return (
@@ -16,34 +16,43 @@ export default function Banner() {
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
-                <a
-                  href="#"
-                  className="whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
-                  border-transparent rounded-full shadow-sm text-base font-medium text-black bg-indigo-100 hover:bg-indigo-200"
-                
+                <motion.div
+                  animate={{ scale: [1, 1.05, 1] }}
+                  transition={{ duration: 30 }}
                 >
-                  <img
-                    className="h-6 mr-2 w-auto object-contain"
-                    src="./apple.png"
-                    alt=""
-                  />
-                  Apple Store
-                </a>
+                  <a
+                    href="#"
+                    className="whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
+                  border-transparent rounded-full shadow-sm text-base font-medium text-black bg-indigo-100 hover:bg-indigo-200"
+                  >
+                    <img
+                      className="h-6 mr-2 w-auto object-contain"
+                      src="./apple.png"
+                      alt=""
+                    />
+                    Apple Store
+                  </a>
+                </motion.div>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
-                <a
-                  href="#"
-                  className="whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
+                <motion.div
+                  animate={{ scale: [1, 1.05, 1] }}
+                  transition={{ duration: 30 }}
+                >
+                  <a
+                    href="#"
+                    className="whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gradient-to-r 
                   from-yellow-500 via-red-500 to-red-500"
                   >
-                  <img
-                    className="h-6 mr-2 w-auto object-contain"
-                    src="./playstore.png"
-                    alt=""
-                  />
-                  Play Store
-                </a>
+                    <img
+                      className="h-6 mr-2 w-auto object-contain"
+                      src="./playstore.png"
+                      alt=""
+                    />
+                    Play Store
+                  </a>
+                </motion.div>
               </div>
             </div>
           </div>
