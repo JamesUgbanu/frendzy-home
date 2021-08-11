@@ -1,7 +1,16 @@
+import { motion } from "framer-motion"
 import YoutubeEmbed from "../components/YoutubeEmbed";
 
 export default function Product() {
   return (
+    <motion.div transition={{
+        y: {
+          duration: 1,
+          yoyo: 1,  
+          ease: "easeIn",
+        }
+      }}
+      animate={{ y: ["-5px", "0px"] }}>
     <div className="py-12 bg-gray-900 overflow-hidden">
       <div className="grid md:grid-cols-2 gap-4">
         <div className="mt-5 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-6 lg:mt-10 lg:px-8 xl:mt-5">
@@ -16,5 +25,6 @@ export default function Product() {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 }
