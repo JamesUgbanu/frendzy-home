@@ -40,5 +40,8 @@
 .video-responsive {
   overflow: hidden;
   position: relative;
-  /* height: 0; */
+}
+
+.main {
+  z-index: 99 !important;
 }

@@ -2,9 +2,9 @@ import { Stage, Layer, Shape } from "react-konva";
 
 export default function Banner() {
   return (
-    <div className="py-12 bg-gray-900 overflow-hidden">
-      <div className="opacity-5 absolute top-0 left-0">
-        <Stage width={500} height={500}>
+    <div className="py-12 bg-gray-900 md:relative">
+      <div className="opacity-5 absolute top-0 left-0 z-0">
+        <Stage width={window.innerWidth - 50} height={window.innerHeight}>
           <Layer>
             <Shape
               sceneFunc={(context, shape) => {
@@ -19,8 +19,8 @@ export default function Banner() {
           </Layer>
         </Stage>
       </div>
-      <div className="opacity-10 absolute top-30 left-0">
-        <Stage width={500} height={500}>
+      <div className="opacity-10 absolute top-30 left-0 z-0">
+        <Stage width={window.innerWidth - 50} height={window.innerHeight}>
           <Layer>
             <Shape
               sceneFunc={(context, shape) => {
@@ -35,7 +35,7 @@ export default function Banner() {
           </Layer>
         </Stage>
       </div>
-      <div className="relative max-w-7xl py-4 mx-auto">
+      <div className="relative max-w-7xl py-4 mx-auto z-0">
         <main className="mt-5 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-6 lg:mt-10 lg:px-8 xl:mt-5">
           <div className="sm:text-center lg:text-left">
             <h1 className="text-xl tracking-tight font-bold text-white sm:text-5xl md:text-4xl">
@@ -50,7 +50,7 @@ export default function Banner() {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
+                  className="w-full whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-black bg-indigo-100 hover:bg-indigo-200"
                 >
                   <img
@@ -64,7 +64,7 @@ export default function Banner() {
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="#"
-                  className="whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
+                  className="w-full whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gradient-to-r 
                   from-yellow-500 via-red-500 to-red-500"
                 >

@@ -1,29 +1,29 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { ChartBarIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { HomeIcon, HeartIcon, DownloadIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const solutions = [
   {
     name: "Home",
     href: "#",
-    icon: ChartBarIcon,
+    icon: HomeIcon,
   },
   {
     name: "Features",
     href: "#",
-    icon: ChartBarIcon,
+    icon: HeartIcon,
   },
   {
     name: "Download",
     href: "#",
-    icon: ChartBarIcon,
+    icon: DownloadIcon,
   },
 ];
 
 export default function Header() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 relative main">
       <Popover className="relative">
         {({ open }) => (
           <>
@@ -85,20 +85,20 @@ export default function Header() {
               <Popover.Panel
                 focus
                 static
-                className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+                className="absolute top-0 inset-x-0 p-2 z-999 transition transform origin-top-right md:hidden"
               >
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-                  <div className="pt-5 pb-6 px-5">
+                  <div className="z-90 pt-5 pb-6 px-5">
                     <div className="flex items-center justify-between">
                       <div>
                         <img
-                          className="h-8 w-auto"
-                          src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                          className="h-14 w-auto"
+                          src="./logo_red.png"
                           alt="Workflow"
                         />
                       </div>
                       <div className="-mr-2">
-                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:gray-900">
                           <span className="sr-only">Close menu</span>
                           <XIcon className="h-6 w-6" aria-hidden="true" />
                         </Popover.Button>
@@ -113,7 +113,7 @@ export default function Header() {
                             className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                           >
                             <item.icon
-                              className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                              className="flex-shrink-0 h-6 w-6 text-gray-600"
                               aria-hidden="true"
                             />
                             <span className="ml-3 text-base font-medium text-gray-900">
