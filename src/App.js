@@ -3,6 +3,7 @@ import "./App.css";
 import Page from "./components/Page";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
+import Product from "./components/Product";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Page title="Welcome to Frendzy">
         <Header />
         <Banner />
+        <Product />
       </Page>
     </Router>
   );
