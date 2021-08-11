@@ -6,17 +6,17 @@ import { HomeIcon, HeartIcon, DownloadIcon, MenuIcon, XIcon } from "@heroicons/r
 const solutions = [
   {
     name: "Home",
-    href: "#",
+    href: "/",
     icon: HomeIcon,
   },
   {
     name: "Features",
-    href: "#",
+    href: "/",
     icon: HeartIcon,
   },
   {
     name: "Download",
-    href: "#",
+    href: "/",
     icon: DownloadIcon,
   },
 ];
@@ -30,7 +30,7 @@ export default function Header() {
             <div className="max-w-5xl mx-auto px-4 sm:px-6">
               <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
-                  <a href="#">
+                  <a href="/">
                     <span className="sr-only">Workflow</span>
                     <img
                       className="h-14 w-auto sm:h-14"
@@ -47,13 +47,13 @@ export default function Header() {
                 </div>
                 <Popover.Group as="nav" className="hidden md:flex space-x-10">
                   <a
-                    href="#"
+                    href="/"
                     className="text-white font-medium hover:text-gray-300"
                   >
                     Home
                   </a>
                   <a
-                    href="#"
+                    href="/"
                     className="text-white font-medium hover:text-gray-300"
                   >
                     Features
@@ -61,7 +61,7 @@ export default function Header() {
                 </Popover.Group>
                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                   <a
-                    href="#"
+                    href="/"
                     className="animate-pulse ml-8 whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gradient-to-r 
                   from-yellow-500 via-red-500 to-red-500"

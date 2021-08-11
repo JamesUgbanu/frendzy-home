@@ -49,7 +49,7 @@ export default function Banner() {
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 <a
-                  href="#"
+                  href="/"
                   className="w-full whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-black bg-indigo-100 hover:bg-indigo-200"
                 >
@@ -63,7 +63,7 @@ export default function Banner() {
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="#"
+                  href="/"
                   className="w-full whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gradient-to-r 
                   from-yellow-500 via-red-500 to-red-500"
