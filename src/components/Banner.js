@@ -2,7 +2,7 @@ import { Stage, Layer, Shape } from "react-konva";
 
 export default function Banner() {
   return (
-    <div className="py-12 bg-gray-900 md:relative">
+    <div className="py-12 bg-gray-900">
       <div className="opacity-5 absolute top-0 left-0 z-0">
         <Stage width={window.innerWidth - 50} height={window.innerHeight}>
           <Layer>
@@ -42,9 +42,9 @@ export default function Banner() {
               <span className="block xl:inline">Welcome to Frendzy</span>
             </h1>
             <p className="text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              Create your own or join an existing Frendzy. With Frendzy you can
+              create your own local event on an instant or discover what’s
+              happening your neighbourhood. Time to Frendzy!
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
@@ -65,8 +65,7 @@ export default function Banner() {
                 <a
                   href="/"
                   className="w-full whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
-                  border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gradient-to-r 
-                  from-yellow-500 via-red-500 to-red-500"
+                  border-transparent rounded-full shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-900"
                 >
                   <img
                     className="h-6 mr-2 w-auto object-contain"

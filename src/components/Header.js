@@ -3,23 +3,23 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { HomeIcon, HeartIcon, DownloadIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 
-const solutions = [
-  {
-    name: "Home",
-    href: "/",
-    icon: HomeIcon,
-  },
-  {
-    name: "Features",
-    href: "/",
-    icon: HeartIcon,
-  },
-  {
-    name: "Download",
-    href: "/",
-    icon: DownloadIcon,
-  },
-];
+// const solutions = [
+//   {
+//     name: "Home",
+//     href: "/",
+//     icon: HomeIcon,
+//   },
+//   {
+//     name: "Features",
+//     href: "/",
+//     icon: HeartIcon,
+//   },
+//   {
+//     name: "Download",
+//     href: "/",
+//     icon: DownloadIcon,
+//   },
+// ];
 
 export default function Header() {
   return (
@@ -39,13 +39,13 @@ export default function Header() {
                     />
                   </a>
                 </div>
-                <div className="-mr-2 -my-2 md:hidden">
+                {/* <div className="-mr-2 -my-2 md:hidden">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Open menu</span>
                     <MenuIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
-                </div>
-                <Popover.Group as="nav" className="hidden md:flex space-x-10">
+                </div> */}
+                {/* <Popover.Group as="nav" className="hidden md:flex space-x-10">
                   <a
                     href="/"
                     className="text-white font-medium hover:text-gray-300"
@@ -59,6 +59,7 @@ export default function Header() {
                     Features
                   </a>
                 </Popover.Group>
+                 */}
                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                   <a
                     href="/"
@@ -72,7 +73,7 @@ export default function Header() {
               </div>
             </div>
 
-            <Transition
+            {/* <Transition
               show={open}
               as={Fragment}
               enter="duration-200 ease-out"
@@ -127,6 +128,7 @@ export default function Header() {
                 </div>
               </Popover.Panel>
             </Transition>
+           */}
           </>
         )}
       </Popover>
