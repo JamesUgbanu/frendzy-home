@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { HomeIcon, HeartIcon, DownloadIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+// import { Fragment } from "react";
+import { Popover } from "@headlessui/react";
+// import { HomeIcon, HeartIcon, DownloadIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 
 // const solutions = [
 //   {
