@@ -11,13 +11,13 @@ function App() {
     <Router>
       <Page title="Welcome to Frendzy">
         <Switch>
+          <Route path="/privacy">
+            <Privacy />
+          </Route>
           <Route path="/">
             <Header />
             <Banner />
             <Product />
-          </Route>
-          <Route path="/privacy">
-            <Privacy />
           </Route>
         </Switch>
       </Page>
