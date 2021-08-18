@@ -10,12 +10,12 @@ function App() {
   return (
     <Router>
       <Page title="Welcome to Frendzy">
+        <Header />
         <Switch>
           <Route path="/privacy">
             <Privacy />
           </Route>
           <Route path="/">
-            <Header />
             <Banner />
             <Product />
           </Route>
