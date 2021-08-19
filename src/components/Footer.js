@@ -7,7 +7,7 @@ function Footer() {
         <div class="md:flex md:-mx-4 md:items-center">
           <div class="md:flex-1 md:px-4 text-center md:text-left">
             <p class="text-white">
-              &copy; <strong>Frendzy</strong>
+              &copy; <strong>Frendzy 2021</strong>
             </p>
           </div>
           <div class="md:flex-1 md:px-4 text-center md:text-right">
