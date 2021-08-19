@@ -3,7 +3,7 @@ export default function Privacy() {
     <div className="py-12">
       <div className="mt-5 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-6 lg:mt-10 lg:px-8 xl:mt-5">
         <h1 className="text-xl tracking-tight font-bold text-gray-500 sm:text-5xl md:text-4xl">
-          <span className="block xl:inline">Privacy Notice</span>
+          <span className="block xl:inline">Privacy Policy</span>
         </h1>
         <p className="text-base text-gray-500 sm:mt-5 sm:text-lg">
           Your privacy and security is very important to us at Holla Labs LTD,
