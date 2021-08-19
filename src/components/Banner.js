@@ -2,7 +2,7 @@ import { Stage, Layer, Shape } from "react-konva";
 
 export default function Banner() {
   return (
-    <div className="py-12 bg-gray-900">
+    <div className="py-12 bg-red-600">
       <div className="opacity-5 absolute top-0 left-0 z-0">
         <Stage width={window.innerWidth - 50} height={window.innerHeight}>
           <Layer>
@@ -14,7 +14,7 @@ export default function Banner() {
                 context.quadraticCurveTo(0, 0, 0, 0);
                 context.fillStrokeShape(shape);
               }}
-              fill="#FC4343"
+              fill="#000"
             />
           </Layer>
         </Stage>
@@ -41,7 +41,7 @@ export default function Banner() {
             <h1 className="text-xl tracking-tight font-bold text-white sm:text-5xl md:text-4xl">
               <span className="block xl:inline">Welcome to Frendzy</span>
             </h1>
-            <p className="text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            <p className="text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               Create your own or join an existing Frendzy. With Frendzy you can
               create your own local event on an instant or discover what’s
               happening your neighbourhood. Time to Frendzy!
@@ -65,7 +65,7 @@ export default function Banner() {
                 <a
                   href="/"
                   className="w-full whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
-                  border-transparent rounded-full shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-900"
+                  border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gray-900 hover:bg-gray-800"
                 >
                   <img
                     className="h-6 mr-2 w-auto object-contain"

@@ -23,7 +23,7 @@ import { Popover } from "@headlessui/react";
 
 export default function Header() {
   return (
-    <div className="bg-gray-900 relative main">
+    <div className="bg-red-600 relative main">
       <Popover className="relative">
         {({ open }) => (
           <>
@@ -34,7 +34,7 @@ export default function Header() {
                     <span className="sr-only">Workflow</span>
                     <img
                       className="h-14 w-auto sm:h-14"
-                      src="/logo_red.png"
+                      src="/logo_white.png"
                       alt=""
                     />
                   </a>
@@ -64,8 +64,7 @@ export default function Header() {
                   <a
                     href="/"
                     className="animate-pulse ml-8 whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
-                  border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gradient-to-r 
-                  from-yellow-500 via-red-500 to-red-500"
+                  border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gray-900"
                   >
                     Download
                   </a>
