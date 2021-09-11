@@ -2,9 +2,9 @@ import { Stage, Layer, Shape } from "react-konva";
 
 export default function Banner() {
   return (
-    <div className="py-12 bg-red-600">
+    <div className="py-12 bg-red-600 grid md:grid-cols-2 justify-items-center ">
       <div className="opacity-5 absolute top-0 left-0 z-0">
-        <Stage width={window.innerWidth - 50} height={window.innerHeight}>
+        <Stage width={window.innerWidth - 200} height={window.innerHeight - 200}>
           <Layer>
             <Shape
               sceneFunc={(context, shape) => {
@@ -20,7 +20,7 @@ export default function Banner() {
         </Stage>
       </div>
       <div className="opacity-10 absolute top-30 left-0 z-0">
-        <Stage width={window.innerWidth - 50} height={window.innerHeight}>
+        <Stage width={window.innerWidth - 200} height={window.innerHeight - 200}>
           <Layer>
             <Shape
               sceneFunc={(context, shape) => {
@@ -79,7 +79,7 @@ export default function Banner() {
           </div>
         </main>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
           className="h-full w-full object-contain sm:h-72 md:h-full lg:w-full lg:h-full"
           src="./home.gif"
