@@ -42,9 +42,8 @@ export default function Banner() {
               <span className="block xl:inline">Welcome to Frendzy</span>
             </h1>
             <p className="text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Create your own or join an existing Frendzy. With Frendzy you can
-              create your own local event on an instant or discover what’s
-              happening your neighbourhood. Time to Frendzy!
+              Create your own or join an existing Frendzy. With Frendzy you can create your own local event in an instant 
+              or discover what’s happening in your neighbourhood. Time to Frendzy!
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
