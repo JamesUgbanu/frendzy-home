@@ -2,7 +2,7 @@ import { Stage, Layer, Shape } from "react-konva";
 
 export default function Banner() {
   return (
-    <div className="py-12 bg-red-600 grid md:grid-cols-2 justify-items-center ">
+    <div className="py-12 bg-red-600 grid md:grid-cols-2 justify-items-center">
       <div className="opacity-5 absolute top-0 left-0 z-0">
         <Stage width={window.innerWidth - 200} height={window.innerHeight - 200}>
           <Layer>
@@ -42,20 +42,22 @@ export default function Banner() {
               <span className="block xl:inline">Welcome to Frendzy</span>
             </h1>
             <p className="text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Create your own or join an existing Frendzy. With Frendzy you can create your own local event in an instant 
+              Create your own or join an existing Frendzy. With Frendzy you can create your own local event in an instant
               or discover what’s happening in your neighbourhood. Time to Frendzy!
             </p>
-            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start" id="download-button">
               <div className="rounded-md shadow">
                 <a
-                  href="/"
+                  href="https://apps.apple.com/gb/app/frendzy/id1577764922"
                   className="w-full whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-black bg-indigo-100 hover:bg-indigo-200"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <img
-                    className="h-6 mr-2 w-auto object-contain"
+                    className="h-5 mr-2 w-auto object-contain"
                     src="./apple.png"
-                    alt=""
+                    alt="Apple Store"
                   />
                   Apple Store
                 </a>

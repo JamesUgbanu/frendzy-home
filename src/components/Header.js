@@ -62,7 +62,7 @@ export default function Header() {
                  */}
                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                   <a
-                    href="/"
+                    href="#download-button"
                     className="animate-pulse ml-8 whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gray-900"
                   >
