@@ -64,7 +64,7 @@ export default function Banner() {
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="/"
+                  href="https://play.google.com/store/apps/details?id=com.holla.frendzy"
                   className="w-full whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gray-900 hover:bg-gray-800"
                 >
