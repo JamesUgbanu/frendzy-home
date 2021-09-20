@@ -67,11 +67,14 @@ export default function Banner() {
                   href="https://play.google.com/store/apps/details?id=com.holla.frendzy"
                   className="w-full whitespace-nowrap inline-flex items-center justify-center px-8 py-2 border 
                   border-transparent rounded-full shadow-sm text-base font-medium text-white bg-gray-900 hover:bg-gray-800"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     className="h-6 mr-2 w-auto object-contain"
                     src="./playstore.png"
-                    alt=""
+                    alt="Play store"
+                    target="_blank"
                   />
                   Play Store
                 </a>
